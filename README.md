@@ -10,6 +10,13 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Start coding
+
+Petama sebelum coding pastikan semua perubahan sudah di `commit`.
+Jangan lupa jalankan `git pull` di branch `development`.
+
+Kalau ada conflict, resolve manual di VSCode, kemudian di `push`.
+
 ## Documentation
 
 Figma design : [Figma link](https://www.figma.com/file/dGAI7k3V8gbGcu5Xl2m2Ox/Favoree?node-id=7%3A38)
