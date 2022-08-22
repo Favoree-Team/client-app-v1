@@ -29,6 +29,20 @@ Kalau ada conflict, resolve manual di VSCode, kemudian di `push`.
 
 Figma design : [Figma link](https://www.figma.com/file/dGAI7k3V8gbGcu5Xl2m2Ox/Favoree?node-id=7%3A38)
 
+## Project Structure
+
+| Directory       | Description                                                                                        |
+| --------------- | -------------------------------------------------------------------------------------------------- |
+| public          | contains static files such as index html, javascript library files, images, and other assets, etc. |
+| pages           | contains a page on the application                                                                 |
+| src/components  | contains reusable components                                                                       |
+| src/containers  | contains components and consist of other component and they have logic inside it                   |
+| src/config/lang | contains content in different language                                                             |
+| src/context     | contains React's context that allows you to share data to any component                            |
+| src/parts       | contains a smaller ui that can be reused, it can be part of a component                            |
+| src/services    | contains files to connect with third parties                                                       |
+| src/utils       | contains file like reusable function, assets etc                                                   |
+
 ## Convention Commit message
 
 List convention:
