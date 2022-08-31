@@ -43,6 +43,21 @@ Figma design : [Figma link](https://www.figma.com/file/dGAI7k3V8gbGcu5Xl2m2Ox/Fa
 | src/services    | contains files to connect with third parties                                                       |
 | src/utils       | contains file like reusable function, assets etc                                                   |
 
+## Architecture
+
+Jika mau menambah component atau _containers_, tidak perlu membuat folder baru yang berisi `index.js`, langsung aja. Penamaan diawali huruf besar.
+
+```txt
+|__ components/
+|   |__ Button
+|        |__ index.js [TIDAK PERLU]
+```
+
+```txt
+|__ components/
+|   |__ Button.js   [OK]
+```
+
 ## Convention Commit message
 
 List convention:
