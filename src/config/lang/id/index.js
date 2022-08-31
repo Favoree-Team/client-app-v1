@@ -1,11 +1,11 @@
-import { hubungi_admin, laporkan_kendala } from "../../credential";
+import { contact_number, hubungi_admin, laporkan_kendala } from "../../credential";
 
 export const Header = {
   ABOUT: "Tentang Kami",
   HOW_IT_WORKS: "Cara Kerja",
 };
 
-export const Hero = {
+export const HeroText = {
   TITLE: "Solusi aman dan mudah transfer saldo e-wallet anda", // antar
   DESCRIPTION: "Favoree merupakan platform digital yang mejamin keamanan anda dalam melakukan transfer saldo antar E-wallet dengan biaya rendah.",
   START: "Yuk mulai",
@@ -39,7 +39,7 @@ export const FooterText = {
   }],
 
   SERVICE_HEAD: "Layanan Pengguna",
-  SEVICE_SECTION: [{
+  SERVICE_SECTION: [{
     name: "Laporkan Kendala",
     isExternal: true,
     href: laporkan_kendala,
@@ -54,7 +54,16 @@ export const FooterText = {
   }],
   
   CONTACT_HEAD: "Hubungi Kami",
-  CONTACT_SECTION: ["Nomor Telepon", "0857-3665-3576"],
+  CONTACT_SECTION: ["Nomor Telepon", "0857-3665-3576", {
+    name: "Nomor Telepon",
+    isExternal: false,
+    isLink: false,
+  }, {
+    name: "0857-3665-3576",
+    isExternal: true,
+    isLink: true,
+    href: contact_number
+  }],
 
   TIME_OPERATION: "Jam Operasional",
   TIME: "Setiap hari, pukul 08.00 - 21.00 WIB",

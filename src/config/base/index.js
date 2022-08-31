@@ -1,6 +1,38 @@
 import { extendTheme } from "@chakra-ui/react";
 
+import "@fontsource/poppins/700.css"
+import "@fontsource/poppins/600.css"
+import "@fontsource/poppins/500.css"
+import "@fontsource/poppins/400.css"
+
 const theme = extendTheme({
+  fonts: {
+    heading: 'Poppins',
+    body: 'Poppins',
+  },
+  components: {
+    Button: {
+        fontFamily: 'Inter',
+    },
+    heading: {
+        fontFamily: 'Poppins',
+        fontWeight: {
+            normal: 400,
+            medium: 500,
+            semibold: 600,
+            bold: 700,
+        }
+    },
+    Text: {
+        fontFamily: 'Poppins',
+        fontWeight: {
+            normal: 400,
+            medium: 500,
+            semibold: 600,
+            bold: 700,
+        }
+    }
+  }, 
   colors: {
     brand: {
       primary: "#43919B",

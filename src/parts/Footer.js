@@ -20,23 +20,25 @@ const Footer = () => {
 
                     <Flex minW={"65%"} justifyContent={"space-between"}>
                         <Box>
-                            <Heading fontSize={'2xl'}>{FooterText.FEATURE_HEAD}</Heading>
+                            <Heading fontSize={'2xl'}  pb={2}>{FooterText.FEATURE_HEAD}</Heading>
                             {
                                 FooterText.FEATURE_SECTION?.map((item, index) => {
                                     return (
-                                        <Text py={0.5} fontSize={'lg'} key={index}>
-                                            <Link href="#">{item}</Link>
+                                        <Text py={0.5} fontSize={'lg'} key={index} color={"brand.primary"}>
+                                            <Link href={item.href}>{item.name}</Link>
                                         </Text>
                                     )
                                 })
                             }
                         </Box>
                         <Box>
-                            <Heading fontSize={'2xl'}>{FooterText.SERVICE_HEAD}</Heading>
+                            <Heading fontSize={'2xl'} pb={2}>{FooterText.SERVICE_HEAD}</Heading>
                             {
                                 FooterText.SERVICE_SECTION?.map((item, index) => {
                                     return (
-                                        <Text fontSize={'lg'} key={index}>{item}</Text>
+                                        <Text py={0.5} fontSize={'lg'} key={index} color={"brand.primary"}>
+                                            <Link href={item.href}>{item.name}</Link>
+                                        </Text>
                                     )
                                 })
                             }
@@ -46,13 +48,15 @@ const Footer = () => {
                             {
                                 FooterText.CONTACT_SECTION?.map((item, index) => {
                                     return (
-                                        <Text fontSize={'lg'} key={index}>{item}</Text>
+                                        <Text py={0.5} fontSize={'lg'} key={index} color={"brand.primary"}>{
+                                            item?.isLink ? <Link href={item.href}>{item.name}</Link> : item.name
+                                        }</Text>
                                     )
                                 })
                             }
 
-                            <Heading fontSize={'2xl'}>{FooterText.TIME_OPERATION}</Heading>
-                            <Text fontSize={'lg'}>{FooterText.TIME}</Text>
+                            <Heading pt={4} pb={2} fontSize={'2xl'}>{FooterText.TIME_OPERATION}</Heading>
+                            <Text fontSize={'lg'} py={0.5}>{FooterText.TIME}</Text>
                         </Box>
                     </Flex>
 
