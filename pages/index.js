@@ -1,3 +1,4 @@
+import { Box } from "@chakra-ui/react";
 import Layout from "../src/components/Layout";
 import Benefit from "../src/containers/Home/Benefit";
 import BlogPreview from "../src/containers/Home/BlogPreview";
@@ -10,13 +11,21 @@ import Testimoni from "../src/containers/Home/Tertimoni";
 export default function Home() {
   return (
       <Layout>
-        <Hero/>
-        <Benefit/>
-        <CaraKerja/>
-        <Testimoni/>
-        <BlogPreview/>
-        <FAQ/>
-        <Problem/>
+        <Box maxW={'7xl'} margin={"auto"}>
+          <Hero/>
+          <Benefit/>
+          <CaraKerja/>
+          <Testimoni/>
+          <BlogPreview/>
+          <FAQ/>
+          <Problem/>
+        </Box>
       </Layout>
   )
 }
+
+// 812 + 396 = 1208
+
+// 1239 
+
+
