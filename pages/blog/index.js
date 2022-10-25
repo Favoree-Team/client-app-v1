@@ -1,16 +1,16 @@
-import { Box, Heading } from "@chakra-ui/react";
-import Layout from "../../src/components/Layout";
+import HeroBlog from '@containers/Blog/Hero'
+import Search from '@containers/Blog/Search'
+import Layout from '@components/Layout'
+import Articles from '@containers/Blog/Articles'
 
 const Blog = () => {
   return (
-    <>
-      <Layout>
-        <Box>
-          <Heading>Hello from Blog</Heading>
-        </Box>
-      </Layout>
-    </>
-  );
-};
+    <Layout>
+      <HeroBlog />
+      <Search />
+      <Articles />
+    </Layout>
+  )
+}
 
-export default Blog;
+export default Blog

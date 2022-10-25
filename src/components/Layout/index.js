@@ -1,15 +1,15 @@
-import Navbar from "../../parts/Navbar";
-import Footer from "../../parts/Footer";
+import Navbar from '../../parts/Navbar'
+import Footer from '../../parts/Footer'
+import { Box, Container } from '@chakra-ui/react'
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <Box>
       <Navbar />
-      <main>{children}</main>
-      <Footer/>
-    </div>
-  );
-};
+      <Container maxW="7xl">{children}</Container>
+      <Footer />
+    </Box>
+  )
+}
 
-export default Layout;
-
+export default Layout
