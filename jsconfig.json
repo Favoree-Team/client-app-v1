@@ -1,0 +1,19 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@config/*": ["src/config/*"],
+      "@containers/*": ["src/containers/*"],
+      "@helper/*": ["src/helpers/*"],
+      "@parts/*": ["src/parts/*"],
+      "@services/*": ["src/services/*"],
+      "@utils/*": ["src/utils/*"],
+      "@*": ["*"]
+    },
+    "incremental": true
+  },
+  "exclude": ["dist", ".next", "out", "node_modules", "next.config.js", "coverage"],
+  "include": [".", "**/*.js", "**/*.js"]
+}
