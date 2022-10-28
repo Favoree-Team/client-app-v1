@@ -25,5 +25,6 @@ export const step_five = '/icons/cara_kerja/step5.svg'
 export const blog_hero = '/images/hero/blog.png'
 
 // testing -> delete after using actual data from API
-export const testing_video = 'images/testing/video.png'
-export const testing_post = 'images/testing/post.png'
+export const testing_video = '/images/testing/video.png'
+export const testing_post = '/images/testing/post.png'
+export const testing_detail = '/images/testing/post-detail.png'

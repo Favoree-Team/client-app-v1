@@ -1,9 +1,9 @@
-import Meta from "../components/Meta";
-import Image from "next/image";
-import Link from "next/link";
-import { logo } from "../utils/assets";
-import { Flex, Spacer, Text, Box } from "@chakra-ui/react";
-import StyledButton from "./StyledButton";
+import Meta from '../Meta'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Flex, Spacer, Text, Box } from '@chakra-ui/react'
+import StyledButton from '@src/parts/StyledButton'
+import { logo } from '@src/utils/assets'
 
 const Navbar = () => {
   return (
@@ -36,7 +36,7 @@ const Navbar = () => {
         </Box>
       </nav>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

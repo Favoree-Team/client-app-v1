@@ -1,6 +1,6 @@
-import Navbar from '../../parts/Navbar'
-import Footer from '../../parts/Footer'
 import { Box, Container } from '@chakra-ui/react'
+import Footer from '@components/Footer'
+import Navbar from '@components/Navbar'
 
 const Layout = ({ children }) => {
   return (
