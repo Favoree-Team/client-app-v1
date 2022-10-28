@@ -1,15 +1,15 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@config/*": ["src/config/*"],
-      "@containers/*": ["src/containers/*"],
-      "@helper/*": ["src/helpers/*"],
-      "@parts/*": ["src/parts/*"],
-      "@services/*": ["src/services/*"],
-      "@utils/*": ["src/utils/*"],
+      "@components/*": ["/src/components/*"],
+      "@config/*": ["/src/config/*"],
+      "@containers/*": ["/src/containers/*"],
+      "@helper/*": ["/src/helpers/*"],
+      "@parts/*": ["/src/parts/*"],
+      "@services/*": ["/src/services/*"],
+      "@utils/*": ["/src/utils/*"],
       "@*": ["*"]
     },
     "incremental": true
